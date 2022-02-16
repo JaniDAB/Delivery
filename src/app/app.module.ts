@@ -14,6 +14,7 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatListModule} from "@angular/material/list";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NavComponent } from './nav/nav.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavComponent } from './nav/nav.component';
     DashboardComponent,
     HomeComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
