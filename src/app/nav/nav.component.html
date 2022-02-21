@@ -1,6 +1,6 @@
 <mat-nav-list>
   <div class="logo py-4">
-    <img src="./assets/logo.svg" alt="Company Logo" />
+    <img src="./assets/logo.jpeg" alt="Company Logo" />
   </div>
   <mat-divider></mat-divider>
   <h2 matSubheader class="mt-2">APPLICATIONS</h2>
@@ -11,10 +11,34 @@
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
     <mat-icon>dashboard</mat-icon> Dashboard
   </a>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/login"> <mat-icon>edit</mat-icon> Login </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 4 </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 5 </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 6 </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/login"> <mat-icon>login</mat-icon> Login </a>
+<!--  <a mat-list-item routerLinkActive="list-item-active" routerLink="/addClient"> <mat-icon>edit</mat-icon> Add Client Form </a>-->
+<!--  <mat-list-item><mat-icon>edit</mat-icon> Menu</mat-list-item>-->
+<!--  <a mat-list-item> <mat-icon>edit</mat-icon> Link 5 </a>-->
+  <a mat-list-item><button  mat-button [matMenuTriggerFor]="menu1" >  <mat-icon>support_agent</mat-icon>Clients</button>
+
+    <mat-menu #menu1="matMenu" routerLink="/addClient" >
+      <button mat-menu-item routerLink="/addClient">Add Client</button>
+      <button mat-menu-item  routerLink="/viewAllClients" >View Clients</button>
+    </mat-menu>
+  </a>
+  <a mat-list-item  >
+
+    <button  mat-button [matMenuTriggerFor]="menu"   routerLink="/addCustomer">  <mat-icon>maps_home_work</mat-icon>Customers</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item  routerLink="/addCustomer" >Add Customer</button>
+      <button mat-menu-item   routerLink="/viewAllCustomers">View Customers</button>
+    </mat-menu>
+  </a>
+  <a mat-list-item  >
+
+    <button  mat-button [matMenuTriggerFor]="menu2"   routerLink="/addOrder">  <mat-icon>bookmark_border</mat-icon>Orders</button>
+    <mat-menu #menu2="matMenu">
+      <button mat-menu-item  routerLink="/addOrder" >Add Order</button>
+      <button mat-menu-item routerLink="/viewAllOrders" >View Orders</button>
+    </mat-menu>
+  </a>
+
 </mat-nav-list>
 
 

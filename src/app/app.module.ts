@@ -15,6 +15,19 @@ import {MatListModule} from "@angular/material/list";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import {AddClientFormComponent} from "./Forms/add-client-form/add-client-form.component";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import {MatButtonModule} from "@angular/material/button";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatInputModule} from "@angular/material/input";
+import { AddCustomerFormComponent } from './Forms/add-customer-form/add-customer-form.component';
+import { AddOrdersFormComponent } from './Forms/add-orders-form/add-orders-form.component';
+import { ViewAllClientsComponent } from './Views/Clients/view-all-clients/view-all-clients.component';
+import {ViewAllCustomersComponent} from "./Views/Customers/view-all-customers/view-all-customers.component";
+import {ViewAllOrdersComponent} from "./Views/Orders/view-all-orders/view-all-orders.component";
+
 
 @NgModule({
   declarations: [
@@ -23,7 +36,14 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     HeaderComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+      AddClientFormComponent,
+      AddCustomerFormComponent,
+      AddOrdersFormComponent,
+      ViewAllClientsComponent,
+      ViewAllCustomersComponent,
+      ViewAllOrdersComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +55,13 @@ import { LoginComponent } from './login/login.component';
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule,  ],
+    MatListModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatInputModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

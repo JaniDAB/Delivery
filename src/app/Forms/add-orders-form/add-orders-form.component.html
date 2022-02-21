@@ -1,0 +1,99 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Add a Order</div>
+  <div class="page__content shadow p-3 position-relative">
+    <form>
+
+
+      <div class="col-xl-7 m-auto order-xl-1">
+
+
+        <div class="pl-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+
+              <mat-form-field appearance="outline">
+                <mat-label>Client </mat-label>
+                <mat-icon matSuffix> person_outline</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+
+              <br>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Delivery Type</mat-label>
+                <mat-icon matSuffix> phone_iphone</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="outline">
+                <mat-label>Parcel Price</mat-label>
+                <mat-icon matSuffix> home</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="outline">
+                <mat-label>District</mat-label>
+                <mat-icon matSuffix> home</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+
+            </div>
+
+            <div class="col-lg-6">
+              <mat-form-field appearance="outline">
+                <mat-label> Delivery Fee</mat-label>
+                <mat-icon matSuffix> email</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="outline">
+                <mat-label> COD</mat-label>
+                <mat-icon matSuffix> qr_code_2</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+
+              <br>
+              <mat-form-field appearance="outline">
+                <mat-label> Client ID</mat-label>
+                <mat-icon matSuffix> qr_code_2</mat-icon>
+                <input matInput  >
+              </mat-form-field>
+            </div>
+          </div>
+
+        </div>
+        <hr class="my-4">
+
+        <!--                                            <mat-divider></mat-divider>-->
+
+        <div class="pl-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="b1">
+                <!--                                                            <button type="button" (click)="AcceptRejectUserDetails('APPROVED')" class="btn btn-success">Approve</button>-->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="b1">
+                <!--                                                            <button type="button"  class="btn btn-danger">Reject</button>-->
+                <div>
+                  <button mat-raised-button color="primary"
+                          style="background-color: seagreen; width: 400px; height: 50px"
+                          matTooltip="Save Order">
+                    Add Order
+                    <mat-icon >add</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </form>
+  </div>
+</div>
